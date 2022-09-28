@@ -48,16 +48,16 @@ const Right = () => {
             <h4 className="rounded-full bg-white w-10 h-10 rightCenter">10s</h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">10s</h4>
+            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">20s</h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">10s</h4>
+            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">30s</h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">10s</h4>
+            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">40s</h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">10s</h4>
+            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">50s</h4>
           </div>
         </div>
         <h2 className="text-4xl font-semibold">Exercise Details</h2>

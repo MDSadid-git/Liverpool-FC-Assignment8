@@ -5,15 +5,21 @@ import Right from "./components/Right.js/Right";
 
 function App() {
   const [players, setPlayers] = useState([]);
+  const playerAsying = async () => {
+    try {
+      const res = await fetch("FakeData.JSON");
+      const data = await res.json();
+      setPlayers(data);
+    } catch {
+      console.log("Data Missing Plz try again!!!");
+    }
+  };
   useEffect(() => {
-    fetch("FakeData.JSON")
-      .then((res) => res.json())
-      .then((data) => setPlayers(data));
+    playerAsying();
   }, []);
   return (
     <div className="App">
       <LeftBart players={players}></LeftBart>
-
       <Right></Right>
     </div>
   );
