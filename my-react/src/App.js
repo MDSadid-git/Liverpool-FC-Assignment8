@@ -20,7 +20,6 @@ function App() {
   useEffect(() => {
     playerAsying();
   }, []);
-
   return (
     <div>
       <div className="App">

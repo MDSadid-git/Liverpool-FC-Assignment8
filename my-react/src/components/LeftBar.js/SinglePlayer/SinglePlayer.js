@@ -1,4 +1,3 @@
-import React from "react";
 import "./SinglePlayer.css";
 const SinglePlayer = ({
   players: { name, time, img, category },
@@ -6,7 +5,7 @@ const SinglePlayer = ({
   setPlayersTime,
 }) => {
   const handleExercise = () => {
-    setPlayersTime(time);
+    setPlayersTime(parseInt(time));
   };
 
   return (

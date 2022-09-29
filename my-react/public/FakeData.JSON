@@ -4,41 +4,41 @@
     "category": "Forward",
     "name": "Mohamed Salah",
     "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/A087/production/_122059014_ms-nc.jpg",
-    "time": "30s"
+    "time": "30"
   },
   {
     "id": "2",
     "category": "Forward",
     "name": "Darwin Núñez",
     "img": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQZxF5FD-Pj0TATPrA6HOBB6pd_3Eis8KovSgwcIWUGd5T1UMQKj4Z-QjzDHGe6oeN8nutbDu-AcB10WH4",
-    "time": "40s"
+    "time": "40"
   },
   {
     "id": "3",
     "category": "Forward",
     "name": "Luis Díaz",
     "img": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRwobPR37VShpWxnGlNtuLMBFcLWjX3OYg_pUOSm9vMFlR8UDfguxzxatAX744LNC4xZgW3Jipl6R1W&s=19",
-    "time": "43s"
+    "time": "43"
   },
   {
     "id": "4",
     "category": "Defender",
     "name": "Trent Alexander-Arnold",
     "img": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Trent_Alexander-Arnold_2018.jpg",
-    "time": "50s"
+    "time": "50"
   },
   {
     "id": "5",
     "category": "Midfielder",
     "name": "Arthur Melo",
     "img": "https://www.si.com/.image/t_share/MTkyMDcwNTE0OTU5NzIxODEw/arthur-melo.jpg",
-    "time": "45s"
+    "time": "45"
   },
   {
     "id": "6",
     "category": "Forward",
     "name": "Roberto Firmino",
     "img": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQDGoBnVG0QWlqC9woirirv_IcVl5zHqKDs24MskBIa6ri6XIqQSNop1dncjrN053FQBZoeXROWVHCV&s=19",
-    "time": "35s"
+    "time": "35"
   }
 ]
