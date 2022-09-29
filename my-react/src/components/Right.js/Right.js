@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ayano from "../../images/ayanokouji.png";
 import "./Right.css";
 import Swal from "sweetalert2";
@@ -8,7 +8,11 @@ const Right = ({ playersTime }) => {
   const [breakTime, setBreakTime] = useState([]);
   const addBreakTime = (time) => {
     setBreakTime(time);
+    localStorage.setItem("cart", JSON.stringify(time));
   };
+  useEffect(() => {
+    setBreakTime(localStorage.getItem("cart"));
+  }, [breakTime]);
 
   const sweetAlert = () => {
     Swal.fire("Good job!", "Actvity Completed!", "success");
