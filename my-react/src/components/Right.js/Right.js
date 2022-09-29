@@ -3,10 +3,15 @@ import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import ayano from "../../images/ayanokouji.png";
 import "./Right.css";
+import Swal from "sweetalert2";
 const Right = ({ playersTime }) => {
   const [breakTime, setBreakTime] = useState([]);
   const addBreakTime = (time) => {
     setBreakTime(time);
+  };
+
+  const sweetAlert = () => {
+    Swal.fire("Good job!", "Actvity Completed!", "success");
   };
 
   return (
@@ -100,11 +105,13 @@ const Right = ({ playersTime }) => {
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Break time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{breakTime}</span>seconds
+            <span>{breakTime} </span>seconds
           </h4>
         </div>
         <div className="text-center mt-5">
-          <button className="btn btn-wide m-a">Actvity Completed</button>
+          <button onClick={sweetAlert} className="btn btn-wide m-a">
+            Actvity Completed
+          </button>
         </div>
       </div>
     </div>
