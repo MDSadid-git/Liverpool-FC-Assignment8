@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./SinglePlayer.css";
 const SinglePlayer = ({
   players: { name, time, img, category },
   playersTime,
@@ -11,7 +11,7 @@ const SinglePlayer = ({
 
   return (
     <div>
-      <div className="card md:w-96 bg-base-100 shadow-xl m-auto">
+      <div className="card myWidth  bg-base-100 shadow-xl m-auto">
         <figure className="px-10 pt-10">
           <img
             src={img ? img : "missing img"}

@@ -18,7 +18,7 @@ const LeftBart = ({ players, setPlayersTime, playersTime }) => {
           </span>
         </div>
         <h1 className="my-4 text-xl font-semibold">Select Today's FootBall</h1>
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {players.map((onePlayer) => (
             <SinglePlayer
               players={onePlayer}
