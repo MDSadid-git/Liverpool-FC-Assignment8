@@ -6,7 +6,7 @@ import SinglePlayer from "./SinglePlayer/SinglePlayer";
 
 const LeftBart = ({ players, setPlayersTime, playersTime }) => {
   return (
-    <div className="leftArea">
+    <div className="leftArea pb-24">
       <div>
         <div>
           <FontAwesomeIcon
