@@ -5,6 +5,7 @@ import Right from "./components/Right.js/Right";
 
 function App() {
   const [players, setPlayers] = useState([]);
+  const [playersTime, setPlayersTime] = useState([0]);
   const playerAsying = async () => {
     try {
       const res = await fetch("FakeData.JSON");
@@ -17,10 +18,15 @@ function App() {
   useEffect(() => {
     playerAsying();
   }, []);
+
   return (
     <div className="App">
-      <LeftBart players={players}></LeftBart>
-      <Right></Right>
+      <LeftBart
+        players={players}
+        playersTime={playersTime}
+        setPlayersTime={setPlayersTime}
+      ></LeftBart>
+      <Right playersTime={playersTime}></Right>
     </div>
   );
 }

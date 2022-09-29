@@ -1,6 +1,14 @@
 import React from "react";
 
-const SinglePlayer = ({ players: { name, time, img, category } }) => {
+const SinglePlayer = ({
+  players: { name, time, img, category },
+  playersTime,
+  setPlayersTime,
+}) => {
+  const handleExercise = () => {
+    setPlayersTime(time);
+  };
+
   return (
     <div>
       <div className="card md:w-96 bg-base-100 shadow-xl m-auto">
@@ -16,7 +24,9 @@ const SinglePlayer = ({ players: { name, time, img, category } }) => {
           <p>Category: {category}</p>
           <p>Time: {time}</p>
           <div className="card-actions">
-            <button className="btn btn-primary mt-4">Add Now</button>
+            <button className="btn btn-primary mt-4" onClick={handleExercise}>
+              Add Now
+            </button>
           </div>
         </div>
       </div>

@@ -1,9 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import React, { useState } from "react";
 import ayano from "../../images/ayanokouji.png";
 import "./Right.css";
-const Right = () => {
+const Right = ({ playersTime }) => {
+  const [breakTime, setBreakTime] = useState([]);
+  const addBreakTime = (time) => {
+    setBreakTime(time);
+  };
+
   return (
     <div className="bg-slate-200 p-6 setArea">
       <div>
@@ -45,32 +50,57 @@ const Right = () => {
         <h1 className="text-4xl font-semibold">Add a Break</h1>
         <div className=" flex bg-slate-100 my-5 rounded justify-around py-2">
           <div className="">
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">10s</h4>
+            <h4
+              onClick={() => addBreakTime(10)}
+              className="rounded-full bg-white w-10 h-10 rightCenter"
+            >
+              10s
+            </h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">20s</h4>
+            <h4
+              onClick={() => addBreakTime(20)}
+              className="rounded-full bg-white w-10 h-10 rightCenter"
+            >
+              20s
+            </h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">30s</h4>
+            <h4
+              onClick={() => addBreakTime(30)}
+              className="rounded-full bg-white w-10 h-10 rightCenter"
+            >
+              30s
+            </h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">40s</h4>
+            <h4
+              onClick={() => addBreakTime(40)}
+              className="rounded-full bg-white w-10 h-10 rightCenter"
+            >
+              40s
+            </h4>
           </div>
           <div>
-            <h4 className="rounded-full bg-white w-10 h-10 rightCenter">50s</h4>
+            <h4
+              onClick={() => addBreakTime(50)}
+              className="rounded-full bg-white w-10 h-10 rightCenter"
+            >
+              50s
+            </h4>
           </div>
         </div>
         <h2 className="text-4xl font-semibold">Exercise Details</h2>
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Exercise time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{}</span>seconds
+            <span>{playersTime} </span>seconds
           </h4>
         </div>
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Break time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{}</span>seconds
+            <span>{breakTime}</span>seconds
           </h4>
         </div>
         <div className="text-center mt-5">
