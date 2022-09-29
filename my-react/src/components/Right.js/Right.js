@@ -103,13 +103,13 @@ const Right = ({ playersTime }) => {
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Exercise time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{playersTime} </span>seconds
+            <span>{playersTime} </span>minutes
           </h4>
         </div>
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Break time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{breakTime} </span>seconds
+            <span>{breakTime} </span>minutes
           </h4>
         </div>
         <div className="text-center mt-5">
