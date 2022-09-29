@@ -63,7 +63,7 @@ const Right = ({ playersTime }) => {
               onClick={() => addBreakTime(10)}
               className="rounded-full bg-white w-10 h-10 rightCenter"
             >
-              10s
+              10m
             </h4>
           </div>
           <div>
@@ -71,7 +71,7 @@ const Right = ({ playersTime }) => {
               onClick={() => addBreakTime(20)}
               className="rounded-full bg-white w-10 h-10 rightCenter"
             >
-              20s
+              20m
             </h4>
           </div>
           <div>
@@ -79,7 +79,7 @@ const Right = ({ playersTime }) => {
               onClick={() => addBreakTime(30)}
               className="rounded-full bg-white w-10 h-10 rightCenter"
             >
-              30s
+              30m
             </h4>
           </div>
           <div>
@@ -87,7 +87,7 @@ const Right = ({ playersTime }) => {
               onClick={() => addBreakTime(40)}
               className="rounded-full bg-white w-10 h-10 rightCenter"
             >
-              40s
+              40m
             </h4>
           </div>
           <div>
@@ -95,7 +95,7 @@ const Right = ({ playersTime }) => {
               onClick={() => addBreakTime(50)}
               className="rounded-full bg-white w-10 h-10 rightCenter"
             >
-              50s
+              50m
             </h4>
           </div>
         </div>
