@@ -7,7 +7,7 @@ import Questions from "./components/SimpleQU/Questions";
 
 function App() {
   const [players, setPlayers] = useState([]);
-  const [playersTime, setPlayersTime] = useState([]);
+  const [playersTime, setPlayersTime] = useState([0]);
   const playerAsying = async () => {
     try {
       const res = await fetch("FakeData.JSON");

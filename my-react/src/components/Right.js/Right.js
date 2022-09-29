@@ -5,7 +5,7 @@ import ayano from "../../images/ayanokouji.png";
 import "./Right.css";
 import Swal from "sweetalert2";
 const Right = ({ playersTime }) => {
-  const [breakTime, setBreakTime] = useState([]);
+  const [breakTime, setBreakTime] = useState([0]);
   const addBreakTime = (time) => {
     setBreakTime(time);
     localStorage.setItem("cart", JSON.stringify(time));
@@ -13,7 +13,7 @@ const Right = ({ playersTime }) => {
   useEffect(() => {
     setBreakTime(localStorage.getItem("cart"));
   }, [breakTime]);
-
+  console.log(playersTime);
   const sweetAlert = () => {
     Swal.fire("Good job!", "Actvity Completed!", "success");
   };
@@ -103,17 +103,22 @@ const Right = ({ playersTime }) => {
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Exercise time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{playersTime} </span>minutes
+            <span className="mr-1">
+              {playersTime.reduce(
+                (add1, add2) => parseInt(add1) + parseInt(add2)
+              )}
+            </span>
+            minutes
           </h4>
         </div>
         <div className="flex justify-around bg-white my-5 p-5 mr-5 rounded">
           <h3 className="text-xl font-bold">Break time:</h3>
           <h4 className="text-lg font-light text-slate-400">
-            <span>{breakTime} </span>minutes
+            <span>{breakTime ? breakTime : 0} </span> minutes
           </h4>
         </div>
         <div className="text-center mt-5">
-          <button onClick={sweetAlert} className="btn btn-wide m-a">
+          <button onClick={sweetAlert} className="btn btn-primary btn-wide m-a">
             Actvity Completed
           </button>
         </div>

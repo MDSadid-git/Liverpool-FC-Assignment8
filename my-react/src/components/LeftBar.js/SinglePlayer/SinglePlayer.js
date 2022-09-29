@@ -4,10 +4,10 @@ const SinglePlayer = ({
   playersTime,
   setPlayersTime,
 }) => {
-  const handleExercise = () => {
-    setPlayersTime(parseInt(time));
+  const handleExercise = (add) => {
+    const oldTime = [...playersTime, add];
+    setPlayersTime(oldTime);
   };
-
   return (
     <div>
       <div className="card myWidth  bg-base-100 shadow-xl m-auto">
@@ -23,7 +23,10 @@ const SinglePlayer = ({
           <p>Category: {category}</p>
           <p>Time: {time}</p>
           <div className="card-actions">
-            <button className="btn btn-primary mt-4" onClick={handleExercise}>
+            <button
+              className="btn btn-primary mt-4"
+              onClick={() => handleExercise(time)}
+            >
               Add Now
             </button>
           </div>
